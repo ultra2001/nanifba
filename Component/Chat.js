@@ -10,7 +10,7 @@ function Chat({ id, users }) {
 
     const router = useRouter();
     const [user] = useAuthState(auth);
-   
+  
 
     const enterChat = () => {
         router.push(`/chat/${id}`)
@@ -18,8 +18,10 @@ function Chat({ id, users }) {
 
     const recipientEmail = getRecipientEmail(users, user);
 
- 
-      <Container>
+    return (
+        <Container onClick={enterChat}>
+
+           
 
 
             <p> {recipientEmail} </p>
