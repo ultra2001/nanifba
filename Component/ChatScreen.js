@@ -1,4 +1,4 @@
-import { Avatar } from "@material-ui/core";
+
 import { useRouter } from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
 import styled from "styled-components"
@@ -7,7 +7,6 @@ import { useCollection } from "react-firebase-hooks/firestore";
 import Message from "./Message";
 import { useRef, useState } from "react";
 import firebase from "firebase";
-import getRecipientEmail from "../getRecipientEmail";
 
 
 
@@ -100,7 +99,7 @@ function ChatScreen({ chat, messages, users }) {
             <Header>
 
 
-                <Avatar />
+           
 
 
 
