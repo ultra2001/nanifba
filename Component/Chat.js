@@ -19,7 +19,7 @@ function Chat({ id, users }) {
     const recipientEmail = getRecipientEmail(users, user);
 
  
-
+      <Container>
 
 
             <p> {recipientEmail} </p>
